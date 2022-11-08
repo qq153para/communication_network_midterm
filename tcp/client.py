@@ -22,6 +22,8 @@ port = int(input("Port: "))
 try:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((host, port))
+    print("Successfully connected")
+    print("Please enter your data")
 except:
     print("Could not make a connection to the server")
     input("Press enter to quit")
